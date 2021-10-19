@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///D:/Nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.91 scan initiated Tue Jun 29 19:44:58 2021 as: D:\\Nmap\\nmap.exe -p 22 -A -oX b.xml 192.168.193.133 -->
+<nmaprun scanner="nmap" args="D:\\Nmap\\nmap.exe -p 22 -A -oX b.xml 192.168.193.133" start="1624967098" startstr="Tue Jun 29 19:44:58 2021" version="7.91" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="22"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.193.133" addrtype="ipv4"/>
+<address addr="00:0C:29:33:FF:D2" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<host starttime="1624967099" endtime="1624967103"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.193.133" addrtype="ipv4"/>
+<address addr="00:0C:29:33:FF:D2" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ssh" product="OpenSSH" version="7.4" extrainfo="protocol 2.0" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:7.4</cpe></service><script id="ssh-hostkey" output="&#xa;  2048 b1:3c:b1:9d:9d:c8:92:e3:32:4f:fe:07:b4:c0:fb:3a (RSA)&#xa;  256 ad:d7:76:39:bd:2c:a7:e6:0c:36:9b:91:e8:6c:22:72 (ECDSA)&#xa;  256 57:84:dd:ff:fc:d7:d5:ef:d3:4c:32:0f:48:18:c0:a6 (ED25519)"><table>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQDuXb1z35mqNq+/sGYAP6B/rcG2J6H+KaKe1+J6nfos9pCs4zd4KSLkagTlB0LhATz1TeaKu3Y/+sEUYEEZDbXOgTB08Durm6USqfFcjW0CUoAJd/rPQezq2wgqvav7NPG8RL9ADpQrFWvDmU2ElTI0P1nfemBbtOzXO7YK0ys0uLqvQPQMeDKJiEGGvDksj4BVh6SAnsJ8JwNluqKPaM12sNBklB2njt+q+2bZjTnBsgaxwPUXNydixdGQPqTql/aTAFu2mcwGGuflZ9lsJLjIn6vdl3Jwdg4AKgSJGsnoKFYxHjtMZVsvA3cI7d5tIunLm9RszIOk6ocJkdCB38GP</elem>
+<elem key="bits">2048</elem>
+<elem key="type">ssh-rsa</elem>
+<elem key="fingerprint">b13cb19d9dc892e3324ffe07b4c0fb3a</elem>
+</table>
+<table>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBEzuluF9U4ILEjE+2Tk9qRgQ7w+qicCAhC6goFg4674Xxolf5PFbahlp6e0fasg3aFPizZtFNaJAIcK2VWgSPoc=</elem>
+<elem key="bits">256</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="fingerprint">add77639bd2ca7e60c369b91e86c2272</elem>
+</table>
+<table>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAINBUH02+hoLdizJTgSLgrbClNPUIKe6LyasDkeBWz3Uw</elem>
+<elem key="bits">256</elem>
+<elem key="type">ssh-ed25519</elem>
+<elem key="fingerprint">5784ddfffcd7d5efd34c320f4818c0a6</elem>
+</table>
+</script></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="22"/>
+<portused state="closed" proto="udp" portid="35373"/>
+<osmatch name="Linux 3.2 - 4.9" accuracy="100" line="65317">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="100"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="100"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+</osmatch>
+</os>
+<uptime seconds="68953" lastboot="Tue Jun 29 00:35:50 2021"/>
+<distance value="1"/>
+<tcpsequence index="261" difficulty="Good luck!" values="DF1C487D,969AAB9E,AA1A1B1C,20734566,E5F8F522,A6914B4D"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="1000HZ" values="41C1EB1,41C1F0F,41C1F75,41C1FDB,41C2042,41C216F"/>
+<trace>
+<hop ttl="1" ipaddr="192.168.193.133" rtt="3.64"/>
+</trace>
+<times srtt="3643" rttvar="6135" to="100000"/>
+</host>
+<runstats><finished time="1624967103" timestr="Tue Jun 29 19:45:03 2021" summary="Nmap done at Tue Jun 29 19:45:03 2021; 1 IP address (1 host up) scanned in 5.53 seconds" elapsed="5.53" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

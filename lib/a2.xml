@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///D:/Nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.91 scan initiated Tue Jun 29 19:47:58 2021 as: D:\\Nmap\\nmap.exe -p 443 -A -oX a2.xml 172.31.98.25 -->
+<nmaprun scanner="nmap" args="D:\\Nmap\\nmap.exe -p 443 -A -oX a2.xml 172.31.98.25" start="1624967278" startstr="Tue Jun 29 19:47:58 2021" version="7.91" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="443"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="172.31.98.25" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<host starttime="1624967280" endtime="1624967354"><status state="up" reason="echo-reply" reason_ttl="61"/>
+<address addr="172.31.98.25" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="61"/><service name="https" servicefp="SF-Port443-TCP:V=7.91%T=SSL%I=7%D=6/29%Time=60DB087D%P=i686-pc-windows-windows%r(GetRequest,5B,&quot;HTTP/1\.1\x20302\x20Found\r\nLocation:\x20/CGI/Java/Serviceability\?adapter=device\.statistics\.device\r\n\r\n&quot;)%r(HTTPOptions,1A4,&quot;HTTP/1\.1\x20405\x20Method\x20Not\x20Allowed\r\nContent-Type:\x20text/html;\x20charset=utf-8\r\nContent-Length:\x2081\r\nCache-Control:\x20no-cache,\x20no-store\r\nPragma:\x20no-cache\r\nX-Frame-Options:\x20deny\r\nX-XSS-Protection:\x201;\x20mode=block\r\nContent-Security-Policy:\x20frame-ancestors\x20none\r\nStrict-Transport-Security:\x20max-age=31536000;\x20includeSubDomains\r\nAllow:\x20GET,\x20HEAD,\x20POST\r\n\r\n&lt;html&gt;\r\n&lt;body&gt;\r\n&lt;h1&gt;Method\x20Not\x20Allowed&lt;/h1&gt;\r\n&lt;p&gt;Unsupported&lt;/p&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;&quot;)%r(FourOhFourRequest,176,&quot;HTTP/1\.1\x20200\x20OK\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nContent-Length:\x2050\r\nCache-Control:\x20no-cache,\x20no-store\r\nPragma:\x20no-cache\r\nX-Frame-Options:\x20deny\r\nX-XSS-Protection:\x201;\x20mode=block\r\nContent-Security-Policy:\x20frame-ancestors\x20none\r\nStrict-Transport-Security:\x20max-age=31536000;\x20includeSubDomains\r\nAllow:\x20GET,\x20HEAD,\x20POST\r\n\r\nThe\x20requested\x20URL\x20was\x20not\x20found\x20on\x20the\x20web\x20server\.&quot;);" tunnel="ssl" method="probed" conf="10"/><script id="fingerprint-strings" output="&#xa;  FourOhFourRequest: &#xa;    HTTP/1.1 200 OK&#xa;    Content-Type: text/plain; charset=utf-8&#xa;    Content-Length: 50&#xa;    Cache-Control: no-cache, no-store&#xa;    Pragma: no-cache&#xa;    X-Frame-Options: deny&#xa;    X-XSS-Protection: 1; mode=block&#xa;    Content-Security-Policy: frame-ancestors none&#xa;    Strict-Transport-Security: max-age=31536000; includeSubDomains&#xa;    Allow: GET, HEAD, POST&#xa;    requested URL was not found on the web server.&#xa;  GetRequest: &#xa;    HTTP/1.1 302 Found&#xa;    Location: /CGI/Java/Serviceability?adapter=device.statistics.device&#xa;  HTTPOptions: &#xa;    HTTP/1.1 405 Method Not Allowed&#xa;    Content-Type: text/html; charset=utf-8&#xa;    Content-Length: 81&#xa;    Cache-Control: no-cache, no-store&#xa;    Pragma: no-cache&#xa;    X-Frame-Options: deny&#xa;    X-XSS-Protection: 1; mode=block&#xa;    Content-Security-Policy: frame-ancestors none&#xa;    Strict-Transport-Security: max-age=31536000; includeSubDomains&#xa;    Allow: GET, HEAD, POST&#xa;    &lt;html&gt;&#xa;    &lt;body&gt;&#xa;    &lt;h1&gt;Method Not Allowed&lt;/h1&gt;&#xa;    &lt;p&gt;Unsupported&lt;/p&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;"><elem key="FourOhFourRequest">&#xa;    HTTP/1.1 200 OK&#xa;    Content-Type: text/plain; charset=utf-8&#xa;    Content-Length: 50&#xa;    Cache-Control: no-cache, no-store&#xa;    Pragma: no-cache&#xa;    X-Frame-Options: deny&#xa;    X-XSS-Protection: 1; mode=block&#xa;    Content-Security-Policy: frame-ancestors none&#xa;    Strict-Transport-Security: max-age=31536000; includeSubDomains&#xa;    Allow: GET, HEAD, POST&#xa;    requested URL was not found on the web server.</elem>
+<elem key="GetRequest">&#xa;    HTTP/1.1 302 Found&#xa;    Location: /CGI/Java/Serviceability?adapter=device.statistics.device</elem>
+<elem key="HTTPOptions">&#xa;    HTTP/1.1 405 Method Not Allowed&#xa;    Content-Type: text/html; charset=utf-8&#xa;    Content-Length: 81&#xa;    Cache-Control: no-cache, no-store&#xa;    Pragma: no-cache&#xa;    X-Frame-Options: deny&#xa;    X-XSS-Protection: 1; mode=block&#xa;    Content-Security-Policy: frame-ancestors none&#xa;    Strict-Transport-Security: max-age=31536000; includeSubDomains&#xa;    Allow: GET, HEAD, POST&#xa;    &lt;html&gt;&#xa;    &lt;body&gt;&#xa;    &lt;h1&gt;Method Not Allowed&lt;/h1&gt;&#xa;    &lt;p&gt;Unsupported&lt;/p&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;</elem>
+</script><script id="http-title" output="Cisco Systems, Inc.&#xa;Requested resource was /CGI/Java/Serviceability?adapter=device.statistics.device"><elem key="title">Cisco Systems, Inc.</elem>
+<elem key="redirect_url">/CGI/Java/Serviceability?adapter=device.statistics.device</elem>
+</script><script id="ssl-cert" output="Subject: commonName=CP-7811-SEP0038DFA227D6/organizationName=Cisco Systems Inc.&#xa;Subject Alternative Name: URI:CP-7811-SEP0038DFA227D6&#xa;Not valid before: 2016-09-09T22:07:51&#xa;Not valid after:  2026-09-09T22:17:51"><table key="subject">
+<elem key="commonName">CP-7811-SEP0038DFA227D6</elem>
+<elem key="organizationName">Cisco Systems Inc.</elem>
+<elem key="organizationalUnitName">CTG</elem>
+<elem key="serialNumber">PID:CP-7811 SN:WZP20360J60</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">Cisco Manufacturing CA</elem>
+<elem key="organizationName">Cisco Systems</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">C985C18AFD2E00E109FC3280F6E363E84682682F3F78823909FA0231DAE22C6E872E6DC01B23E66145D42AC1E2BF0F47338A54C12C05D4FCD5E55E3D7D4C1D32FC517858ED17D7F6B18B4360431AFE0508D4A1348F73C5381EFE9B84CE7CD17B259668BF482041FBCE350CFC40579073182E16EA5940A6CE9759F4748982D4276AB875C9BB9BD618B6F0EEBDD930DD6BCEAE1161CD121F82CCFD798E456CC34D12DA2F85E3C8C86CB3F5E481900956680A46E218C94B709B90F6AAD2A6855610F2A3E2C757F19AE4771A94E47135517AAF536F4BCF29BB74C6407CC9EADA2988CB008718B870881C15E0F917B01C1AAA9E277A97DE974232A9C738A037E1C671</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Non Repudiation, Key Encipherment, Data Encipherment</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">URI:CP-7811-SEP0038DFA227D6</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">3C:EA:E2:03:B1:84:A3:2B:FA:7D:BA:F2:92:8F:DC:0D:B6:B4:F3:77</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">keyid:D0:C5:22:26:AB:4F:46:60:EC:AE:05:91:C7:DC:5A:D1:B0:47:F7:6C&#xa;</elem>
+</table>
+<table>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+<elem key="value">&#xa;Full Name:&#xa;  URI:http://www.cisco.com/security/pki/crl/cmca.crl&#xa;</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">CA Issuers - URI:http://www.cisco.com/security/pki/certs/cmca.cer&#xa;</elem>
+</table>
+<table>
+<elem key="name">1.3.6.1.4.1.311.20.2</elem>
+</table>
+</table>
+<elem key="sig_algo">sha1WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2016-09-09T22:07:51</elem>
+<elem key="notAfter">2026-09-09T22:17:51</elem>
+</table>
+<elem key="md5">cacf8a5aa4ed1749168183b61f44f01f</elem>
+<elem key="sha1">d5178e0c5c3c7f187691379043ad6303c0916ad2</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIEhDCCA2ygAwIBAgIKP444HgAAAAQXxTANBgkqhkiG9w0BAQUFADA5MRYwFAYD&#xa;VQQKEw1DaXNjbyBTeXN0ZW1zMR8wHQYDVQQDExZDaXNjbyBNYW51ZmFjdHVyaW5n&#xa;IENBMB4XDTE2MDkwOTIyMDc1MVoXDTI2MDkwOTIyMTc1MVowcjEjMCEGA1UEBRMa&#xa;UElEOkNQLTc4MTEgU046V1pQMjAzNjBKNjAxGzAZBgNVBAoTEkNpc2NvIFN5c3Rl&#xa;bXMgSW5jLjEMMAoGA1UECxMDQ1RHMSAwHgYDVQQDExdDUC03ODExLVNFUDAwMzhE&#xa;RkEyMjdENjCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAMmFwYr9LgDh&#xa;CfwygPbjY+hGgmgvP3iCOQn6AjHa4ixuhy5twBsj5mFF1CrB4r8PRzOKVMEsBdT8&#xa;1eVePX1MHTL8UXhY7RfX9rGLQ2BDGv4FCNShNI9zxTge/puEznzReyWWaL9IIEH7&#xa;zjUM/EBXkHMYLhbqWUCmzpdZ9HSJgtQnarh1ybub1hi28O692TDda86uEWHNEh+C&#xa;zP15jkVsw00S2i+F48jIbLP15IGQCVZoCkbiGMlLcJuQ9qrSpoVWEPKj4sdX8Zrk&#xa;dxqU5HE1UXqvU29Lzym7dMZAfMnq2imIywCHGLhwiBwV4PkXsBwaqp4nepfel0Iy&#xa;qcc4oDfhxnECAwEAAaOCAVMwggFPMAwGA1UdEwEB/wQCMAAwCwYDVR0PBAQDAgTw&#xa;MCIGA1UdEQQbMBmGF0NQLTc4MTEtU0VQMDAzOERGQTIyN0Q2MB0GA1UdDgQWBBQ8&#xa;6uIDsYSjK/p9uvKSj9wNtrTzdzAfBgNVHSMEGDAWgBTQxSImq09GYOyuBZHH3FrR&#xa;sEf3bDA/BgNVHR8EODA2MDSgMqAwhi5odHRwOi8vd3d3LmNpc2NvLmNvbS9zZWN1&#xa;cml0eS9wa2kvY3JsL2NtY2EuY3JsMEwGCCsGAQUFBwEBBEAwPjA8BggrBgEFBQcw&#xa;AoYwaHR0cDovL3d3dy5jaXNjby5jb20vc2VjdXJpdHkvcGtpL2NlcnRzL2NtY2Eu&#xa;Y2VyMD8GCSsGAQQBgjcUAgQyHjAASQBQAFMARQBDAEkAbgB0AGUAcgBtAGUAZABp&#xa;AGEAdABlAE8AZgBmAGwAaQBuAGUwDQYJKoZIhvcNAQEFBQADggEBAEJuUINwK6I0&#xa;w9fP35QccGDLEdp9BCqQtvUWrRP6ASl4laGa2DIOxkCdzdnbeyzUKiTv4b92WQ6T&#xa;K45KxOuSECt67qvk29P0GGqjoKoxLsG8M+p42wZwUNtO+XG/lRKpHXToFCmx/j5f&#xa;whNqMIZb3kLnpHAfoNMRuCsKxBloEH4bnRPyu0S5rsjfgEjPXy9TdySlBUmF2l0b&#xa;PjlUbMpLYdNJuugohncAhIU1fScXSfRg9bhyI8NCPH53j5izskB1Ac7VJrQehIPs&#xa;uRkHKglixV+26Z+wf+FHhsdyOflPXP4qJQVxw0KXyaVgDCbolNSDKJdJVAiRyWe5&#xa;Dk5MulNssws=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="443"/>
+<portused state="closed" proto="udp" portid="32263"/>
+<osmatch name="Tomato 1.28 (Linux 2.4.20)" accuracy="100" line="46911">
+<osclass type="WAP" vendor="Linux" osfamily="Linux" osgen="2.4.X" accuracy="100"><cpe>cpe:/o:linux:linux_kernel:2.4.20</cpe></osclass>
+</osmatch>
+<osmatch name="Tomato firmware (Linux 2.6.22)" accuracy="100" line="61642">
+<osclass type="WAP" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="100"><cpe>cpe:/o:linux:linux_kernel:2.6.22</cpe></osclass>
+</osmatch>
+</os>
+<distance value="4"/>
+<trace port="443" proto="tcp">
+<hop ttl="1" ipaddr="172.31.61.1" rtt="3.00"/>
+<hop ttl="2" ipaddr="172.31.1.9" rtt="2.00"/>
+<hop ttl="3" ipaddr="172.31.1.122" rtt="2.00"/>
+<hop ttl="4" ipaddr="172.31.98.25" rtt="1.00"/>
+</trace>
+<times srtt="1823" rttvar="1728" to="100000"/>
+</host>
+<runstats><finished time="1624967354" timestr="Tue Jun 29 19:49:14 2021" summary="Nmap done at Tue Jun 29 19:49:14 2021; 1 IP address (1 host up) scanned in 76.57 seconds" elapsed="76.57" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

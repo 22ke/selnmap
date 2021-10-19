@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///D:/Nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.91 scan initiated Wed Jun 30 11:22:01 2021 as: D:\\Nmap\\nmap.exe -p 444 -A -oX a3.xml 172.31.98.25 -->
+<nmaprun scanner="nmap" args="D:\\Nmap\\nmap.exe -p 444 -A -oX a3.xml 172.31.98.25" start="1625023321" startstr="Wed Jun 30 11:22:01 2021" version="7.91" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="444"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="172.31.98.25" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<host starttime="1625023324" endtime="1625023327"><status state="up" reason="echo-reply" reason_ttl="61"/>
+<address addr="172.31.98.25" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="444"><state state="closed" reason="reset" reason_ttl="61"/><service name="snpp" method="table" conf="3"/></port>
+</ports>
+<os><portused state="closed" proto="tcp" portid="444"/>
+<portused state="closed" proto="udp" portid="30658"/>
+</os>
+<distance value="4"/>
+<trace port="444" proto="tcp">
+<hop ttl="1" ipaddr="172.31.61.1" rtt="3.00"/>
+<hop ttl="2" ipaddr="172.31.1.9" rtt="2.00"/>
+<hop ttl="3" ipaddr="172.31.1.122" rtt="2.00"/>
+<hop ttl="4" ipaddr="172.31.98.25" rtt="3.00"/>
+</trace>
+<times srtt="1185" rttvar="1211" to="100000"/>
+</host>
+<runstats><finished time="1625023327" timestr="Wed Jun 30 11:22:07 2021" summary="Nmap done at Wed Jun 30 11:22:07 2021; 1 IP address (1 host up) scanned in 6.57 seconds" elapsed="6.57" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

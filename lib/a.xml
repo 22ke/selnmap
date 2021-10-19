@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///D:/Nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.91 scan initiated Tue Jun 29 18:32:17 2021 as: D:\\Nmap\\nmap.exe -p 8001 -A -oX a.txt 192.168.193.133 -->
+<nmaprun scanner="nmap" args="D:\\Nmap\\nmap.exe -p 8001 -A -oX a.txt 192.168.193.133" start="1624962737" startstr="Tue Jun 29 18:32:17 2021" version="7.91" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="8001"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.193.133" addrtype="ipv4"/>
+<address addr="00:0C:29:33:FF:D2" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<host starttime="1624962738" endtime="1624962747"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.193.133" addrtype="ipv4"/>
+<address addr="00:0C:29:33:FF:D2" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="8001"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http" product="nginx" version="1.15.3" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx:1.15.3</cpe></service><script id="http-server-header" output="nginx/1.15.3"><elem>nginx/1.15.3</elem>
+</script><script id="http-title" output="web"><elem key="title">web</elem>
+</script></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="8001"/>
+<portused state="closed" proto="udp" portid="43866"/>
+<osmatch name="Linux 3.2 - 4.9" accuracy="100" line="65317">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="100"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="100"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+</osmatch>
+</os>
+<uptime seconds="64597" lastboot="Tue Jun 29 00:35:50 2021"/>
+<distance value="1"/>
+<tcpsequence index="257" difficulty="Good luck!" values="50A765DF,5B610CC8,A52D6843,93ADF942,5396DA8B,1F4D2A71"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="1000HZ" values="3D9A712,3D9A777,3D9A7DE,3D9A844,3D9A8AA,3D9A923"/>
+<trace>
+<hop ttl="1" ipaddr="192.168.193.133" rtt="1.47"/>
+</trace>
+<times srtt="1466" rttvar="1791" to="100000"/>
+</host>
+<runstats><finished time="1624962747" timestr="Tue Jun 29 18:32:27 2021" summary="Nmap done at Tue Jun 29 18:32:27 2021; 1 IP address (1 host up) scanned in 10.28 seconds" elapsed="10.28" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
