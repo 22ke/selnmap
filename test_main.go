@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"selnmap/nmap"
+	"github.com/22ke/selnmap"
 )
 
 func main() {
