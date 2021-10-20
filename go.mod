@@ -1,4 +1,4 @@
-module github.com/22ke/selnmap
+module github.com/22ke/selnmap/v2
 
 go 1.16
 
