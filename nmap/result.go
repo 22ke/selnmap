@@ -16,7 +16,7 @@ type Ipassent struct {
 	Serversion   string     //7.4
 	Servextra    string     //protocol2.0
 	Msgid        string     //http-server-header,http-title
-	Msgoutput    string     //nginx/1.15.3,web
+	Msgoutput    string  `gorm:"size:2550"`//nginx/1.15.3,web
 	Osname       string     //linux2.3-4.9
 	Servmethod   string     //probed
 	State        string     //up
