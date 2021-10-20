@@ -6,7 +6,7 @@ import (
 )
 
 //数据库结构
-type ipassent struct {
+type Ipassent struct {
 	ID           int
 	Ip           string `gorm:"not null"`
 	Port         string `gorm:"not null"`
@@ -31,7 +31,7 @@ type ipassent struct {
 	Lasttime     string `gorm:"type:timestamp;not null;default:now()"`
 }
 
-func SetDataFromXml(ip string , port string,info string) ipassent {
+func SetDataFromXml(ip string , port string,info string) Ipassent {
 
 
 	dd :=etree.NewDocument()
@@ -78,7 +78,7 @@ func SetDataFromXml(ip string , port string,info string) ipassent {
 	id := strings.Join(scriptid , ",")
 	output:=strings.Join(scriptoutput , ",")
 
-	ipinfo := ipassent{
+	ipinfo := Ipassent{
 		Ip:              ip,
 		Port:            port,
 		Protocal:        protocol,
